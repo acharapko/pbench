@@ -133,7 +133,7 @@ func Debug(v ...interface{}) {
 
 func Debugf(format string, v ...interface{}) {
 	if log.severity == DEBUG {
-		log.debug.Output(2, fmt.Sprintf(format, v...))
+		//log.debug.Output(2, fmt.Sprintf(format, v...))
 	}
 }
 
