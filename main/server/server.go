@@ -10,7 +10,7 @@ import (
 	"github.com/acharapko/pbench/protocols/epaxos"
 	"github.com/acharapko/pbench/protocols/paxos"
 	"io/ioutil"
-	"runtime/debug"
+	//"runtime/debug"
 	"sync"
 	"strconv"
 	"strings"
@@ -94,7 +94,7 @@ func cpuUtilization(id idservice.ID) {
 
 func main() {
 	pbench.Init()
-	debug.SetGCPercent(-1)
+	//debug.SetGCPercent(-1)
 	if *simulation {
 		var wg sync.WaitGroup
 		wg.Add(1)
