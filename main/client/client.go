@@ -5,7 +5,7 @@ import (
 	"github.com/acharapko/pbench"
 	"github.com/acharapko/pbench/bench"
 	"github.com/acharapko/pbench/idservice"
-	//"runtime/debug"
+	"runtime/debug"
 )
 
 var id = flag.String("id", "", "node id this client connects to")
@@ -15,7 +15,7 @@ var load = flag.Bool("load", false, "Load K keys into DB")
 
 func main() {
 	pbench.Init()
-	//debug.SetGCPercent(-1)
+	debug.SetGCPercent(-1)
 	preferredId := idservice.ID(0)
 	if *id != "" {
 		preferredId = idservice.NewIDFromString(*id)
