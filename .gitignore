@@ -4,3 +4,4 @@ bin/*
 !bin/*.json
 .idea/*
 /protocols/topsmr
+.DS_Store

@@ -134,6 +134,7 @@ func (b *Benchmark) Run() {
 	}
 
 	b.startTime = time.Now()
+	log.Infof("Benchmark Start\n")
 	if b.T > 0 {
 		timer := time.NewTimer(time.Second * time.Duration(b.T))
 	loop:
