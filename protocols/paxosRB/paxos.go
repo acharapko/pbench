@@ -1,4 +1,4 @@
-package paxos
+package paxosRB
 
 import (
 	"strconv"

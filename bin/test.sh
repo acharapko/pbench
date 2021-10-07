@@ -11,7 +11,7 @@ if [ -z "${PID}" ]; then
     #go build ../cmd/
     rm -r logs
     mkdir logs/
-    ./server -log_dir=logs -log_level=info -id 1.1 -algorithm=paxos >logs/out1.1.txt 2>&1 &
+    ./server -log_dir=logs -log_level=debug -id 1.1 -algorithm=paxos >logs/out1.1.txt 2>&1 &
     echo $! >> ${PID_FILE}
     ./server -log_dir=logs -log_level=info -id 1.2 -algorithm=paxos >logs/out1.2.txt 2>&1 &
     echo $! >> ${PID_FILE}
